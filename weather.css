@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+}
+
+body {
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); 
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "JetBrains Mono", monospace;
+}
+.header{
+    margin: 70px 0px 100px 0px;
+    font-size: 60px;
+    color: white;
+    border-bottom: 4px solid;
+    padding-bottom: 10px;
+}
+.weather-card {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    height: 100px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+.search-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#search{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom:2px solid rgba(255, 255, 255, 0.6);
+    font-size: 24px;
+    color: whitesmoke;
+    width: 270px;
+    padding: 0px 0px 6px 8px;
+    text-transform: capitalize;
+    font-weight: 900;
+}
+#search::placeholder{
+    color: var(--off-white);
+    font-size: 18px;
+    font-weight: 900;
+}
+#searchBtn {
+    background-color: white; /* Button background */
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 130px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(41, 128, 185,0.5);
+}
+.weather-condition{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.weather-icon{
+    height: 200px;
+    width: 200px;
+    margin: 0px 130px 0px 130px;
+}
+.temp{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: whitesmoke;
+}
+.city{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: whitesmoke;
+    margin-bottom: 70px;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+}
+.koko{
+    font-size: 23px;
+    font-weight: 900;
+    color: whitesmoke;
+    margin-left: 20px;
+}
+.small-icons{
+    width: 70px;
+    height: 70px;
+    
+}
+#err{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    display: none;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+.loooni{
+    display: none;
+}
